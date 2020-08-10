@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 using NUnit.Framework;
-using ProtoBuf;
 using NServiceKit.Plugins.ProtoBuf;
 using NServiceKit.Service;
 using NServiceKit.ServiceClient.Web;

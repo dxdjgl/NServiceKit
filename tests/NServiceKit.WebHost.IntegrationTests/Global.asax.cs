@@ -12,7 +12,6 @@ using NServiceKit.MiniProfiler.Data;
 using NServiceKit.OrmLite;
 using NServiceKit.Plugins.ProtoBuf;
 using NServiceKit.Redis;
-using NServiceKit.Redis.Messaging;
 using NServiceKit.ServiceHost;
 using NServiceKit.ServiceInterface;
 using NServiceKit.ServiceInterface.Admin;

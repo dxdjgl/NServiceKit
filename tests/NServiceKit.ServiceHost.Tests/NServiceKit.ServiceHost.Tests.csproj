@@ -76,18 +76,8 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="Moq">
       <HintPath>..\..\lib\tests\Moq.dll</HintPath>
-    </Reference>
-    <Reference Include="NServiceKit.OrmLite">
-      <HintPath>..\..\lib\NServiceKit.OrmLite.dll</HintPath>
-    </Reference>
-    <Reference Include="NServiceKit.OrmLite.Sqlite">
-      <HintPath>..\..\lib\NServiceKit.OrmLite.Sqlite.dll</HintPath>
-    </Reference>
-    <Reference Include="NServiceKit.Text">
-      <HintPath>..\..\lib\NServiceKit.Text.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
@@ -97,14 +87,7 @@
       <RequiredTargetFramework>3.0</RequiredTargetFramework>
     </Reference>
     <Reference Include="System.Web" />
-    <Reference Include="System.Xml.Linq">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
-    </Reference>
-    <Reference Include="System.Data.DataSetExtensions">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
-    </Reference>
     <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
     <Reference Include="nunit.framework">
       <HintPath>..\..\lib\tests\nunit.framework.dll</HintPath>
     </Reference>
@@ -206,12 +189,8 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\src\NServiceKit.Common\NServiceKit.Common.csproj">
-      <Project>{982416DB-C143-4028-A0C3-CF41892D18D3}</Project>
+      <Project>{982416db-c143-4028-a0c3-cf41892d18d3}</Project>
       <Name>NServiceKit.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\src\NServiceKit.Interfaces\NServiceKit.Interfaces.csproj">
-      <Project>{42E1C8C0-A163-44CC-92B1-8F416F2C0B01}</Project>
-      <Name>NServiceKit.Interfaces</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\src\NServiceKit.Razor\NServiceKit.Razor.csproj">
       <Project>{D73274AE-006B-4CEE-BA60-0ECF5873048D}</Project>

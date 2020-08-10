@@ -32,10 +32,6 @@
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DotNetOpenAuth, Version=4.3.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\src\packages\DotNetOpenAuth.Ultimate.4.3.1.13153\lib\net40-full\DotNetOpenAuth.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="NServiceKit.Text">
       <HintPath>..\..\lib\NServiceKit.Text.dll</HintPath>
@@ -45,9 +41,6 @@
     </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="Mono.Data.Sqlite">
-      <HintPath>..\..\lib\tests\Mono.Data.Sqlite.dll</HintPath>
-    </Reference>
     <Reference Include="NServiceKit.OrmLite">
       <HintPath>..\..\lib\NServiceKit.OrmLite.dll</HintPath>
     </Reference>
@@ -126,7 +119,6 @@
     <Content Include="default.cshtml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <None Include="packages.config" />
     <None Include="Web.config">
       <SubType>Designer</SubType>
     </None>
@@ -138,6 +130,14 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="DotNetOpenAuth">
+      <Version>4.3.4.13329</Version>
+    </PackageReference>
+    <PackageReference Include="DotNetOpenAuth.Ultimate">
+      <Version>4.3.1.13153</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" />
 </Project>
